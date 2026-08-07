@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinaza's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      id="bg-video"
+      src="videos/light-mode.mp4"
+    ></video>
+
+    <div class="overlay" id="overlay"></div>
+    <!-- HAMBURGER MENU -->
+
+    <nav class="hamburger">
+      <div class="logo">
+        <button><a href="">CC</a></button>
+      </div>
+      <div class="icons">
+        <button id="displayMode" class="theme-toggle">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <button id="openBtn" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="pages" id="pages">
+      <ul>
+        <div class="pages-icons">
+          <button>CC</button>
+          <span id="closeBtn" onclick="closeMenu()">X</span>
+        </div>
+
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </section>
+
+    <!-- NORMAL NAVBAR -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <button class="cc"><a href="">CC</a></button>
+
+        <button id="theme" class="theme-toggle">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- FIRST SECTION -->
+    <!-- INTRODUCTION SECTION -->
+
+    <section class="first" id="home">
+      <div class="first-introduction">
+        <span class="greeting">Hello, I'm</span> <br />
+        <span class="my-name">Chinaza</span> <br />
+        <span class="my-role">Frontend Developer</span>
+
+        <p>
+          I build responsive, user-friendly, and visually appealing web
+          applications. I work with HTML, CSS & JavaScript to turn ideas into
+          functional web experiences.
+        </p>
+        <br />
+
+        <button><a href="#projects">VIEW MY PROJECTS</a></button>
+      </div>
+
+      <div class="introduction-image">
+        <img src="/images/Chinaza picture.png" alt="" />
+      </div>
+    </section>
+
+    <!-- SECOND SECTION -->
+    <!-- ABOUT ME SECTION -->
+
+    <section class="second" id="about">
+      <div>
+        <h2>About Me</h2>
+
+        <p>
+          I am an aspiring fullstack developer with a strong interest in
+          creating modern, responsive, and user-friendly web experiences. I
+          transform ideas and designs into functional websites that provide
+          seamless experience for users across different devices.
+        </p>
+
+        <p>
+          I enjoy exploring new technologies, building projects and challenging
+          myself to create better and more efficient solutions while documenting
+          my learning journey. I am currently focused on expanding my knowledge
+          while building projects that strengthen my development skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- THIRD SECTION -->
+    <!-- PROJECT SECTION -->
+
+    <section class="third" id="projects">
+      <div class="project-intro">
+        <h2>Featured Work</h2>
+
+        <p>
+          A collection of projects that showcase my skills in frontend
+          development, problem solving, and building responsive, user friendly
+          web experiences.
+        </p>
+      </div>
+
+      <div class="projects">
+        <!-- RESPONSIVE LANDING PAGE -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="/images/plant avenue.png" alt="Plant avenue page" />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">Plant Avenue</span>
+
+            <p class="project-summary">
+              A responsive landing page featuring clean modern design,
+              interactive elements, and visually appealing styling.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <button class="demo">
+              <a
+                href="https://chinaza-responsive-landingpage1.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </button>
+
+            <button class="code">
+              <a
+                href="https://github.com/chinazachidolue6-eng/Plants-Avenue-Landing-Page"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code Base</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- UNIZIK AGGREGATE CALCULATOR -->
+        <div class="project-item">
+          <div class="project-image">
+            <img
+              src="/images/aggregete calculator.png"
+              alt="Aggregate-Calculator"
+            />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">Aggregate Calculator</span>
+
+            <p class="project-summary">
+              A web application that helps users quickly calculate their
+              aggregate scores through a simple, responsive, and user-friendly
+              interface.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <button class="demo">
+              <a
+                href="https://chinaza-aggregate-calculator.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </button>
+
+            <button class="code">
+              <a
+                href="https://github.com/chinazachidolue6-eng/Aggregate-Calculator"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code Base</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- MUSIC PLAYER -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="/images/music player.png" alt="Music-player image" />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">Music Player</span>
+
+            <p class="project-summary">
+              A responsive web application that allows users to play, pause,
+              skip tracks, and enjoy a smooth, interactive music-listening
+              experience.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <button class="demo">
+              <a
+                href="https://music-player-eta-gray.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </button>
+
+            <button class="code">
+              <a
+                href="https://github.com/chinazachidolue6-eng/Music-player"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code Base</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- TO-DO LIST -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="/images/to do list.png" alt="To do list image" />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">To-Do List</span>
+
+            <p class="project-summary">
+              A responsive web application that helps users organize tasks,
+              track progress, and manage daily activities through a simple
+              intuitive interface.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <button class="demo">
+              <a
+                href="https://to-do-list-zeta-ebon-69.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </button>
+
+            <button class="code">
+              <a
+                href="https://github.com/chinazachidolue6-eng/To-do-list"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code Base</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- CALCULATOR -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="/images/calculator.png" alt="calculator image" />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">Calculator</span>
+
+            <p class="project-summary">
+              A web application that performs basic arithmetic operations
+              through a clean, user-friendly interface.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <button class="demo">
+              <a
+                href="https://chinaza-calculator.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </button>
+
+            <button class="code">
+              <a
+                href="https://github.com/chinazachidolue6-eng/Calculator"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code Base</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- CURRENCY CONVERTER -->
+        <div class="project-item">
+          <div class="project-image">
+            <img
+              src="/images/currency converter.png"
+              alt="currency converter image"
+            />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">Currency Converter</span>
+
+            <p class="project-summary">
+              A responsive web application that enables users to convert
+              currencies quickly and accurately through a simple, intuitive
+              interface.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <button class="demo">
+              <a
+                href="https://currency-converter-gray-eta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live demo</a
+              >
+            </button>
+
+            <button class="code">
+              <a
+                href="https://github.com/chinazachidolue6-eng/Currency-Converter"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code Base</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOURTH SECTION -->
+    <!-- SKILLS SECTION -->
+
+    <section class="fourth" id="skills">
+      <div class="skills-intro">
+        <h2>Skills</h2>
+
+        <p>
+          Here are some of the tools and technologies I use to build modern,
+          responsive, user-friendly websites.
+        </p>
+      </div>
+
+      <div class="skills">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Git</span>
+        <span>Git-hub</span>
+        <span>VS code</span>
+        <span>Vercel</span>
+      </div>
+    </section>
+
+    <section class="full-contact" id="contact">
+      <!-- FIFTH SECTION -->
+      <!-- CONTACT SECTION -->
+
+      <section class="fifth">
+        <div class="contact-intro">
+          <h2>Contact Me</h2>
+
+          <p>
+            Have a project in mind or want to work together? I'd love to hear
+            from you. Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <span
+            ><a
+              href="mailto:chidoluechinaza6@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Email address</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://wa.me/2349072723288"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WhatsApp</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://github.com/chinazachidolue6-eng"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://www.linkedin.com/in/chinaza-chidolue"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://x.com/ch1nex_z"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter / X</a
+            ></span
+          >
+        </div>
+      </section>
+
+      <!-- SIXTH SECTION -->
+      <!-- FORM SECTION -->
+
+      <section class="sixth">
+        <div>
+          <form action="">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea name="" id="" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <!-- SEVENTH SECTION -->
+    <!-- FOOTER SECTION -->
+
+    <section class="seventh">
+      <div class="footer-intro">
+        <h3>Chinaza</h3>
+
+        <p>
+          Frontend developer creating responsive, user-friendly web
+          applications.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <!-- EIGHT SECTION -->
+    <!-- COPYRIGHT -->
+
+    <footer>2026 All rights reserved. Designed and built by Chinaza 💕</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
