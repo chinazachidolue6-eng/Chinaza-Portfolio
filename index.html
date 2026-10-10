@@ -15,26 +15,11 @@
     />
   </head>
   <body>
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      id="bg-video"
-      src="videos/light-mode.mp4"
-    ></video>
-
-    <div class="overlay" id="overlay"></div>
     <!-- HAMBURGER MENU -->
 
     <nav class="hamburger">
       <div class="logo">
         <button><a href="">CC</a></button>
-      </div>
-      <div class="icons">
-        <button id="displayMode" class="theme-toggle">
-          <i class="fa-regular fa-moon"></i>
-        </button>
 
         <button id="openBtn" onclick="openMenu()">
           <i class="fa-solid fa-bars"></i>
@@ -62,10 +47,6 @@
     <nav class="navbar">
       <div class="logo">
         <button class="cc"><a href="">CC</a></button>
-
-        <button id="theme" class="theme-toggle">
-          <i class="fa-regular fa-moon"></i>
-        </button>
       </div>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -81,18 +62,22 @@
 
     <section class="first" id="home">
       <div class="first-introduction">
-        <span class="greeting">Hello, I'm</span> <br />
-        <span class="my-name">Chinaza</span> <br />
-        <span class="my-role">Frontend Developer</span>
+        <span class="my-role">&bull; Frontend Web Developer</span> <br />
+        <span class="opening">Building the Future</span>
 
         <p>
-          I build responsive, user-friendly, and visually appealing web
-          applications. I work with HTML, CSS & JavaScript to turn ideas into
-          functional web experiences.
+          I'm Chinaza, a frontend developer who builds responsive,user-friendly,
+          and visually appealing web applications.
         </p>
         <br />
-
-        <button><a href="#projects">VIEW MY PROJECTS</a></button>
+        <div class="first-btns">
+          <button class="first-project-btn">
+            <a href="#projects">VIEW MY PROJECTS</a>
+          </button>
+          <button class="first-contact-btn">
+            <a href="#contact">GET IN TOUCH</a>
+          </button>
+        </div>
       </div>
 
       <div class="introduction-image">
@@ -132,13 +117,85 @@
 
         <p>
           A collection of projects that showcase my skills in frontend
-          development, problem solving, and building responsive, user friendly
-          web experiences.
+          development.
         </p>
       </div>
 
       <div class="projects">
-        <!-- RESPONSIVE LANDING PAGE -->
+        <!-- BOOKHAVEN -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="/images/BookHaven.png" alt="BookHaven image" />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">BookHaven</span>
+
+            <p class="project-summary">
+              A book discovery website where users can search for books, view
+              details like summary, ratings, genre, and add books to favorite
+              section.
+            </p>
+
+            <div class="project-btns">
+              <button class="demo">
+                <a
+                  href="https://book-haven-beta-sooty.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo</a
+                >
+              </button>
+
+              <button class="code">
+                <a
+                  href="https://github.com/chinazachidolue6-eng/BookHaven"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Base</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREPPAL -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="/images/PrepPal.png" alt="PrepPal image" />
+          </div>
+
+          <div class="project-brief">
+            <span class="project-name">PrepPal</span>
+
+            <p class="project-summary">
+              A responsive landing page of a sudent study app that tracks
+              student productivity and also teaches courses.
+            </p>
+
+            <div class="project-btns">
+              <button class="demo">
+                <a
+                  href="https://prep-pal-lac.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo</a
+                >
+              </button>
+
+              <button class="code">
+                <a
+                  href="https://github.com/chinazachidolue6-eng/PrepPal-Buildlabs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Base</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLANT AVENUE -->
         <div class="project-item">
           <div class="project-image">
             <img src="/images/plant avenue.png" alt="Plant avenue page" />
@@ -148,33 +205,30 @@
             <span class="project-name">Plant Avenue</span>
 
             <p class="project-summary">
-              A responsive landing page featuring clean modern design,
-              interactive elements, and visually appealing styling.
+              A responsive landing page of a plant website featuring clean
+              modern design, interactive elements, and visually appealing
+              styling.
             </p>
 
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+            <div class="project-btns">
+              <button class="demo">
+                <a
+                  href="https://chinaza-responsive-landingpage1.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+              </button>
+
+              <button class="code">
+                <a
+                  href="https://github.com/chinazachidolue6-eng/Plants-Avenue-Landing-Page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Base</a
+                >
+              </button>
             </div>
-
-            <button class="demo">
-              <a
-                href="https://chinaza-responsive-landingpage1.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live Demo</a
-              >
-            </button>
-
-            <button class="code">
-              <a
-                href="https://github.com/chinazachidolue6-eng/Plants-Avenue-Landing-Page"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code Base</a
-              >
-            </button>
           </div>
         </div>
 
@@ -196,29 +250,25 @@
               interface.
             </p>
 
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+            <div class="project-btns">
+              <button class="demo">
+                <a
+                  href="https://chinaza-aggregate-calculator.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+              </button>
+
+              <button class="code">
+                <a
+                  href="https://github.com/chinazachidolue6-eng/Aggregate-Calculator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Base</a
+                >
+              </button>
             </div>
-
-            <button class="demo">
-              <a
-                href="https://chinaza-aggregate-calculator.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live Demo</a
-              >
-            </button>
-
-            <button class="code">
-              <a
-                href="https://github.com/chinazachidolue6-eng/Aggregate-Calculator"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code Base</a
-              >
-            </button>
           </div>
         </div>
 
@@ -237,29 +287,25 @@
               experience.
             </p>
 
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+            <div class="project-btns">
+              <button class="demo">
+                <a
+                  href="https://music-player-eta-gray.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+              </button>
+
+              <button class="code">
+                <a
+                  href="https://github.com/chinazachidolue6-eng/Music-player"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Base</a
+                >
+              </button>
             </div>
-
-            <button class="demo">
-              <a
-                href="https://music-player-eta-gray.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live Demo</a
-              >
-            </button>
-
-            <button class="code">
-              <a
-                href="https://github.com/chinazachidolue6-eng/Music-player"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code Base</a
-              >
-            </button>
           </div>
         </div>
 
@@ -278,113 +324,25 @@
               intuitive interface.
             </p>
 
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+            <div class="project-btns">
+              <button class="demo">
+                <a
+                  href="https://to-do-list-zeta-ebon-69.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+              </button>
+
+              <button class="code">
+                <a
+                  href="https://github.com/chinazachidolue6-eng/To-do-list"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Base</a
+                >
+              </button>
             </div>
-
-            <button class="demo">
-              <a
-                href="https://to-do-list-zeta-ebon-69.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live Demo</a
-              >
-            </button>
-
-            <button class="code">
-              <a
-                href="https://github.com/chinazachidolue6-eng/To-do-list"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code Base</a
-              >
-            </button>
-          </div>
-        </div>
-
-        <!-- CALCULATOR -->
-        <div class="project-item">
-          <div class="project-image">
-            <img src="/images/calculator.png" alt="calculator image" />
-          </div>
-
-          <div class="project-brief">
-            <span class="project-name">Calculator</span>
-
-            <p class="project-summary">
-              A web application that performs basic arithmetic operations
-              through a clean, user-friendly interface.
-            </p>
-
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <button class="demo">
-              <a
-                href="https://chinaza-calculator.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live Demo</a
-              >
-            </button>
-
-            <button class="code">
-              <a
-                href="https://github.com/chinazachidolue6-eng/Calculator"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code Base</a
-              >
-            </button>
-          </div>
-        </div>
-
-        <!-- CURRENCY CONVERTER -->
-        <div class="project-item">
-          <div class="project-image">
-            <img
-              src="/images/currency converter.png"
-              alt="currency converter image"
-            />
-          </div>
-
-          <div class="project-brief">
-            <span class="project-name">Currency Converter</span>
-
-            <p class="project-summary">
-              A responsive web application that enables users to convert
-              currencies quickly and accurately through a simple, intuitive
-              interface.
-            </p>
-
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <button class="demo">
-              <a
-                href="https://currency-converter-gray-eta.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live demo</a
-              >
-            </button>
-
-            <button class="code">
-              <a
-                href="https://github.com/chinazachidolue6-eng/Currency-Converter"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code Base</a
-              >
-            </button>
           </div>
         </div>
       </div>
@@ -398,8 +356,8 @@
         <h2>Skills</h2>
 
         <p>
-          Here are some of the tools and technologies I use to build modern,
-          responsive, user-friendly websites.
+          Tools and technologies I use to build modern, responsive,
+          user-friendly websites.
         </p>
       </div>
 
@@ -407,6 +365,7 @@
         <span>HTML5</span>
         <span>CSS3</span>
         <span>JavaScript</span>
+        <span>React</span>
         <span>Git</span>
         <span>Git-hub</span>
         <span>VS code</span>
@@ -434,7 +393,7 @@
               href="mailto:chidoluechinaza6@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              >Email address</a
+              >Email</a
             ></span
           >
           <span
@@ -513,7 +472,10 @@
     <!-- EIGHT SECTION -->
     <!-- COPYRIGHT -->
 
-    <footer>2026 All rights reserved. Designed and built by Chinaza 💕</footer>
+    <footer>
+      &copy; 2026 All rights reserved. <br />
+      Designed and built by Chinaza 💕
+    </footer>
 
     <script src="index.js"></script>
   </body>
